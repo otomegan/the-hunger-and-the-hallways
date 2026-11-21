@@ -1,0 +1,69 @@
+# ==============================================================================
+# .geminiignore - Otimização de Tokens para The Hunger and the Hallways (Ren'Py)
+# Evita indexação de binários, mídias pesadas e pastas redundantes no contexto da IA
+# ==============================================================================
+
+# 1. Backups e Pastas Duplicadas (Evita que a IA leia e altere arquivos errados)
+game_backup_pre_patch/
+*.bak
+*.old
+*.new
+*.tmp
+
+# 2. Pastas de Scratch, Testes Temporários e Modelos Locais
+scratch/
+scratch_audio_temp/
+tmp/
+temp/
+.agents/skills_archived/
+
+# 3. Arquivos de Mídia Pesada (Áudios, Imagens, Vídeos)
+# O agente acessa caminhos por texto nos scripts .rpy, mas não deve indexar binários
+*.ogg
+*.wav
+*.mp3
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.webm
+*.avi
+*.gif
+
+# 4. Compilados do Ren'Py e Cache de Execução
+game/cache/
+game/saves/
+**/*.rpyc
+**/*.rpymc
+**/*.rpa
+__pycache__/
+*.pyc
+*.pyo
+
+# 5. Pesos de Redes Neurais e Modelos Locais
+*.onnx
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+
+# 6. Controle de Versão e IDE
+.git/
+.svn/
+.vscode/
+.idea/
+
+# 7. Logs e Dumps do Motor Ren'Py
+errors.txt
+files.txt
+image_cache.txt
+log.txt
+save_dump.txt
+traceback.txt
+dialogue.tab
+dialogue.txt
+strings.json
+

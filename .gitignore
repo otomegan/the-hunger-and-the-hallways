@@ -1,0 +1,63 @@
+# ==============================================================================
+# .gitignore — The Hunger and the Hallways
+# ==============================================================================
+
+# Directories that Ren'Py changes files in.
+/game/saves/
+/game/cache/
+
+# Compiled script files.
+/game/**/*.rpyc
+/game/**/*.rpymc
+
+# Files Ren'Py can generate.
+/game/**/*.bak
+/game/**/*.new
+/game/**/*.old
+
+# Error, log, and output files.
+/errors.txt
+/files.txt
+/image_cache.txt
+/log.txt
+/save_dump.txt
+/traceback.txt
+
+# Launcher-generated files.
+/dialogue.tab
+/dialogue.txt
+/strings.json
+
+# Scratch, Temporary Workspaces & Local Models (>100MB Kokoro ONNX)
+/scratch/
+/scratch_audio_temp/
+/tools/
+/__pycache__/
+/scratch_*
+/test_*
+/temp_*
+/update_defs_craft.py
+*.tmp
+*.temp
+*.cache
+
+# Local Backups & Redundant Archives
+/game_backup_pre_patch/
+/backup_png_sprites_novos/
+/backup_vozes_pt_heroinas/
+
+# Secrets, API Keys & Local AI Directives
+GEMINI.md
+.gemini/
+.env
+.env.*
+*.pem
+*.key
+
+# OS & IDE Junk
+.vscode/
+.idea/
+.tmp.driveupload/
+Thumbs.db
+desktop.ini
+.DS_Store
